@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice">
+  <!-- PLACEHOLDER hero artwork. Replace with the official GoTrip promotional banner or professional car photography. -->
+  <defs>
+    <radialGradient id="glow" cx="70%" cy="55%" r="55%">
+      <stop offset="0" stop-color="#E9B949" stop-opacity=".28"/>
+      <stop offset=".45" stop-color="#E9B949" stop-opacity=".06"/>
+      <stop offset="1" stop-color="#0B0D10" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="road" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#15181D"/>
+      <stop offset="1" stop-color="#050608"/>
+    </linearGradient>
+    <linearGradient id="body" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2A2E35"/>
+      <stop offset="1" stop-color="#0E1013"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="#0B0D10"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+  <path d="M0 640 L1600 600 L1600 900 L0 900 Z" fill="url(#road)"/>
+  <g stroke="#E9B949" stroke-width="6" stroke-linecap="round" opacity=".55">
+    <path d="M80 760 L300 748"/><path d="M420 742 L640 731"/><path d="M760 725 L980 714"/><path d="M1100 708 L1320 697"/><path d="M1440 691 L1600 684"/>
+  </g>
+  <g transform="translate(820 420)">
+    <ellipse cx="300" cy="235" rx="360" ry="26" fill="#000" opacity=".6"/>
+    <path d="M20 190 C25 150 60 135 120 128 L230 70 C260 55 300 50 360 52 C430 54 470 62 520 100 L600 130 C640 140 665 160 668 195 L668 215 L20 215 Z" fill="url(#body)" stroke="#3A3F47" stroke-width="2"/>
+    <path d="M250 82 C275 70 310 66 360 67 C410 68 445 75 480 102 L490 122 L235 122 Z" fill="#0B0D10" stroke="#E9B949" stroke-opacity=".35"/>
+    <path d="M30 170 L668 170" stroke="#E9B949" stroke-width="3" opacity=".8"/>
+    <circle cx="160" cy="215" r="46" fill="#0B0D10" stroke="#2A2E35" stroke-width="10"/>
+    <circle cx="160" cy="215" r="18" fill="#E9B949"/>
+    <circle cx="530" cy="215" r="46" fill="#0B0D10" stroke="#2A2E35" stroke-width="10"/>
+    <circle cx="530" cy="215" r="18" fill="#E9B949"/>
+    <path d="M640 150 L668 158" stroke="#FFF6D8" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>
