@@ -20,6 +20,7 @@ export function SiteFooter() {
         <div>
           <h2 className="mb-4 text-sm font-semibold tracking-wider text-white uppercase">Explore</h2>
           <ul className="space-y-2.5 text-sm">
+            <li><Link className="hover:text-gold" to="/admin">Admin</Link></li>
             <li><Link className="hover:text-gold" to="/cars">All cars</Link></li>
             <li><Link className="hover:text-gold" to="/how-it-works">How it works</Link></li>
             <li><Link className="hover:text-gold" to="/policies">Rental policies</Link></li>
