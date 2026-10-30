@@ -5,6 +5,10 @@
     {
       "source": "/api/:path*",
       "destination": "https://gotrip-backend-c33l.onrender.com/api/:path*"
+    },
+     {
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ]
 }
