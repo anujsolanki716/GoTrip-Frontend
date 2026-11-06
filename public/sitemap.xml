@@ -38,5 +38,36 @@
         <loc>https://go-trip.co.in/terms</loc>
     </url>
 
+    <url>
+    <loc>https://go-trip.co.in/car-rental</loc>
+    </url>
+    <url>
+    <loc>https://go-trip.co.in/car-rental/greater-noida</loc>
+    </url>
+    <url>
+    <loc>https://go-trip.co.in/car-rental/greater-noida-west</loc>
+    </url>
+    <url>
+    <loc>https://go-trip.co.in/car-rental/noida</loc>
+    </url>
+    <url>
+    <loc>https://go-trip.co.in/car-rental/noida-extension</loc>
+    </url>
+    <url>
+    <loc>https://go-trip.co.in/car-rental/delhi</loc>
+    </url>
+    <url>
+    <loc>https://go-trip.co.in/car-rental/gurugram</loc>
+    </url>
+    <url>
+    <loc>https://go-trip.co.in/car-rental/ghaziabad</loc>
+    </url>
+    <url>
+    <loc>https://go-trip.co.in/car-rental/faridabad</loc>
+    </url>
+    <url>
+    <loc>https://go-trip.co.in/car-rental/delhi-ncr</loc>
+    </url>
+
 </urlset>
 
