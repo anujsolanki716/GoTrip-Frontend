@@ -13,6 +13,7 @@ import { HowItWorksPage } from "@/pages/HowItWorksPage";
 import { PrivacyPage, TermsPage } from "@/pages/LegalPages";
 import { NotFoundPage } from "@/pages/NotFoundPage";
 import { PoliciesPage } from "@/pages/PoliciesPage";
+import { LocationPage } from "@/pages/LocationPage";
 
 // The admin area is code-split so it never loads for regular visitors.
 const AdminAccountPage = lazy(() => import("@/admin/AdminAccountPage").then((x) => ({ default: x.AdminAccountPage })));
@@ -37,6 +38,8 @@ const router = createBrowserRouter([
       { index: true, element: <HomePage /> },
       { path: "cars", element: <CarsPage /> },
       { path: "cars/:slug", element: <CarDetailPage /> },
+      { path: "car-rental", element: <LocationPage /> },
+      { path: "car-rental/:location", element: <LocationPage /> },
       { path: "enquire", element: <EnquirePage /> },
       { path: "how-it-works", element: <HowItWorksPage /> },
       { path: "policies", element: <PoliciesPage /> },
@@ -48,7 +51,14 @@ const router = createBrowserRouter([
       { path: "*", element: <NotFoundPage /> },
     ],
   },
-  { path: "/admin/login", element: <Lazy><AdminLoginPage /></Lazy> },
+  {
+    path: "/admin/login",
+    element: (
+      <Lazy>
+        <AdminLoginPage />
+      </Lazy>
+    ),
+  },
   {
     path: "/admin",
     errorElement: <ErrorPage />,

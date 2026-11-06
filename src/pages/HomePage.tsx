@@ -34,6 +34,14 @@ const AUDIENCES = [
   { icon: Home, title: "Residents & families", text: "7-seaters and SUVs for family functions, outstation drives and weekend getaways." },
 ];
 
+const SERVICE_AREA_LINKS = [
+  { name: "Greater Noida", path: "/car-rental/greater-noida" },
+  { name: "Greater Noida West", path: "/car-rental/greater-noida-west" },
+  { name: "Noida", path: "/car-rental/noida" },
+  { name: "Noida Extension", path: "/car-rental/noida-extension" },
+  { name: "Delhi", path: "/car-rental/delhi" },
+];
+
 export const STEPS = [
   { icon: Search, title: "Explore cars", text: "Browse our fleet, specifications and indicative prices." },
   { icon: MessageCircle, title: "Send an enquiry", text: "Tell us the car and dates. No account, no payment." },
@@ -284,15 +292,26 @@ export function HomePage() {
               confidence.
             </p>
             <div className="mt-6 flex flex-wrap gap-2">
-              {config.service_areas.map((a) => (
-                <span
-                  key={a}
-                  className="inline-flex items-center gap-1 rounded-full bg-cloud px-3 py-1.5 text-sm"
+              {SERVICE_AREA_LINKS.map((area) => (
+                <Link
+                  key={area.path}
+                  to={area.path}
+                  className="inline-flex items-center gap-1 rounded-full bg-cloud px-3 py-2 text-sm transition hover:bg-ink hover:text-white"
                 >
                   <MapPin className="size-3.5 text-gold-600" aria-hidden />
-                  {a}
-                </span>
+                  {area.name}
+                </Link>
               ))}
+            </div>
+
+            <div className="mt-5">
+              <Link
+                to="/car-rental"
+                className="inline-flex items-center gap-2 text-sm font-semibold text-ink underline underline-offset-4 hover:text-gold-600"
+              >
+                Explore all our car rental service areas
+                <ArrowRight className="size-4" />
+              </Link>
             </div>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
